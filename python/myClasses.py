@@ -1,7 +1,10 @@
 class firstClass:
-    myName = "Lesley"
-    print("Hello World" + myName)
+    def __init__(self, firstName, lastName):
+        self.firstName = firstName
+        self.lastName = lastName
+    #myName = "Lesley"
+        print("Hello World " + self.firstName + " " + self.lastName)
 
 
-newClass = firstClass()
-print(newClass.myName)
+newClass = firstClass("Lesley", "Bonyo")
+print(newClass)
